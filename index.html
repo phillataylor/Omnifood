@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Omifood is an AI-powered food subscription that willmae you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +19,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again</title>
   </head>
   <body>
     <header class="header">
@@ -22,11 +28,11 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 2</a></li>
-          <li><a class="main-nav-link" href="#">Section 3</a></li>
-          <li><a class="main-nav-link" href="#">Section 4</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try it for free</a></li>
         </ul>
       </nav>
 
@@ -45,7 +51,7 @@
               Tailored to your personal tastes and nutritional needs. We have delivered 250,000+
               meals last year!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
+            <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
             <a href="#" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -83,7 +89,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">Your daily dose of health in 3 easy steps</h2>
@@ -144,7 +150,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -210,7 +216,7 @@
 
 
 
-      <section class="section-testimonials ">
+      <section class="section-testimonials" id="testimonials">
 
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
@@ -298,7 +304,7 @@
         </div>
       </section>
 
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -371,7 +377,7 @@
       </section>
 
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container ">
           <div class="cta">
             <div class="cta-text-box">
@@ -430,9 +436,9 @@
               <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
             </ul>
 
-            <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc.All rights reserved.</p>
+            <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.All rights reserved.</p>
         </div>
-        
+
         <div class="address-col">
           <p class="footter-heading">Contact us</p>
           <address class="contacts">
@@ -488,5 +494,7 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   </body>
 </html>
